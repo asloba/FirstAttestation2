@@ -4,8 +4,11 @@ import java.util.Random;
 
 public class Sensor {
 
+    public static int humidity;
+
     public static int getHumidity() {
         Random random = new Random();
-        return random.nextInt(101);
+        humidity = random.nextInt(101);
+        return humidity;
     }
 }
